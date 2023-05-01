@@ -49,7 +49,7 @@ body {
     white-space: nowrap;
 }
 
-.mobile-menu {
+#menu-btn {
     display: none;
 }
 
@@ -57,31 +57,32 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .navbar ul {
+    #fullnav {
       display: none;
     }
 
-    .mobile-menu {
+    #menu-btn {
         display: flex;
         margin-right: 10%;
     }
-    
+     
 
     /* .dropdown-menu:hover .menu-content {
         display: block;
       } */
-      .menu-btn {
+      #menu-btn {
         
-        background-color: var(--primary-color);
-        color:var(--text-color);
-        
+        background-color: var(--text-color) !important;
+        color:var(--text-color) !important;
+        opacity: 70%;
         /* padding: 16px; */
       
         border: none;
       }
     
+     
 
-      .menu-content {
+      /* .menu-content {
         display: none;
         position: absolute;
         background-color: var(--back-color);
@@ -99,7 +100,7 @@ body {
       .mobile-menu:hover .menu-content {
         display: block;
         margin-top: 7%;
-      }
+      } */
 
     }
 
